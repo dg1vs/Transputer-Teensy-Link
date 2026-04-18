@@ -2,5 +2,5 @@
 
 Please check [https://bin.transputer.net/](https://bin.transputer.net/) for the latest version.
 
-The bin ist a snapshot from the website 17.04.2025
+The file bin.zip is just a snapshot from the website (date 17.04.2026). 
 
