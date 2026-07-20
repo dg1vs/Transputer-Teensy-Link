@@ -1,3 +1,4 @@
 [submodule "hardware/libs/Transputer-Kicad-Library"]
 	path = hardware/libs/Transputer-Kicad-Library
-	url = https://github.com/dg1vs/Transputer-Kicad-Library.git
+	url = git@github.com:dg1vs/Transputer-Kicad-Library.git
+
