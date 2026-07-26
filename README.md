@@ -85,6 +85,8 @@ The KiCad hardware projects are located below [`hardware/`](hardware/).
 
 Directory: [`hardware/link_teensy/`](hardware/link_teensy/)
 
+![Teensy 4.1 with INMOS C011](docs/teensy_with_C011.jpeg)
+
 This is the most complete board and contains both:
 
 - a traditional INMOS C011 link interface;
@@ -111,6 +113,8 @@ The main disadvantage of the C011 path is its dependency on a historical compone
 ### B. `link_teensy_small` — compact direct link
 
 Directory: [`hardware/link_teensy_small/`](hardware/link_teensy_small/)
+
+![Compact direct Teensy Link interface](docs/first_working_teensy_small.jpeg)
 
 This is a smaller board that connects the Teensy 4.1 directly to the transputer link without requiring a C011.
 
@@ -144,6 +148,8 @@ Always verify the exact connector orientation and board revision before connecti
 ### C. `link_teensy_fpga` — direct link with PMOD adapter
 
 Directory: [`hardware/link_teensy_fpga/`](hardware/link_teensy_fpga/)
+
+![Direct Teensy Link with PMOD adapter](docs/teensy_with_pmod.jpeg)
 
 This version is derived from the compact direct-link design and adds a 12-pin PMOD-style connector.
 
