@@ -52,7 +52,7 @@ void setup() {
   }
   */
   Serial.println("*********************************");
-  Serial.println("TransputerLink Adapter V3a (C011, TeensyLink, B300-Emu, Audio, USB-Host)");
+  Serial.println("TransputerLink Adapter V3.01 (C011, TeensyLink, B300-Emu, Audio, USB-Host)");
   Serial.println("Andre Saischowa 2026");
   Serial.print( F("Compiled: "));
   Serial.print( F(__DATE__));
@@ -65,7 +65,7 @@ void setup() {
 #ifdef MIT_OLEDDISP
 
   disp_init();
-  disp_writeLine("TransputerLink V3.A",0);
+  disp_writeLine("TransputerLink V3.01",0);
   disp_flush();
 
 #endif

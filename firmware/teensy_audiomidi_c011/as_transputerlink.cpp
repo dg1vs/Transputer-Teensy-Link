@@ -39,7 +39,6 @@ void asTransputerLinkBase::setReset_Pin(bool ein){
   #ifdef DEBUG_ON    
     printf("setReset_Pin %d \r\n",ein);
   #endif  
-  printf("setReset_Pin %d \r\n",ein);
   }
 
 }
@@ -105,18 +104,25 @@ int asTransputerLinkBase::ResetLink(    ){
   return 1;
 }
 int asTransputerLinkBase::AnalyseLink(  ){
-#ifdef DEBUG_ON    
-  printf("asTpLinkC011::AnalyseLink\r\n");
-#endif  
+// #ifdef DEBUG_ON    
+//   printf("asTpLinkC011::AnalyseLink\r\n");
+// #endif 
+
   if ( !m_openFlag )    return ER_LINK_BAD;
+    //aus Treiber link004.dos von Mike Brüstle
+    // _outp( B004_ANA( LinkId ), 1 ); Delay( 100 );
+    // _outp( B004_RST( LinkId ), 1 ); Delay( 100 );
+    // _outp( B004_RST( LinkId ), 0 ); Delay(   0 );
+    // _outp( B004_ANA( LinkId ), 0 ); Delay( 100 );
+    setAnalyse_Pin(true);   delay(100);
+    setReset_Pin(true);     delay(100);
+    setReset_Pin(false);    //kein delay delay(100);
+    setAnalyse_Pin(false);  delay(100);
   return 1;
 }
 int asTransputerLinkBase::TestError(    ){
-  //Todo wenn PCB fertig
-  //printf("asTpLinkC011::TestError\r\n");
   if ( !m_openFlag )    return ER_LINK_BAD;
-    
-  return 0;  
+  return (getError_Pin() ? 1 : 0);  
 }
 
 int asTransputerLinkBase::TestRead(     ){

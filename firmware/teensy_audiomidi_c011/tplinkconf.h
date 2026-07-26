@@ -1,7 +1,8 @@
 #pragma once
 
-//#define  MIT_LINK_C011
+#define  MIT_LINK_C011_NO
 #define  MIT_LINK_TEENSY 
+#define  MIT_OLEDDISP 1
 
 #define LINK_TEENSY_SERIAL  Serial7 /* Rx 28, Tx 29 */
 
@@ -27,7 +28,7 @@
 #define AS_PAKET_READ_NO 1
 
 
-#define  MIT_OLEDDISP 1
+
 
 #ifdef MIT_OLEDDISP
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
