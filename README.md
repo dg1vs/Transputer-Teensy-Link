@@ -149,7 +149,7 @@ Always verify the exact connector orientation and board revision before connecti
 
 Directory: [`hardware/link_teensy_fpga/`](hardware/link_teensy_fpga/)
 
-![Direct Teensy Link with PMOD adapter](docs/teensy_with_pmod.jpeg)
+![Direct Teensy Link with PMOD adapter](docs/teensy_with_pico2.jpeg)
 
 This version is derived from the compact direct-link design and adds a 12-pin PMOD-style connector.
 
